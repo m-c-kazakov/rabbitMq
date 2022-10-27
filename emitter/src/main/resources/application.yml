@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  rabbitmq:
+    addresses: "localhost"
+    listener:
+      simple:
+        prefetch: 1
+      direct:
+        prefetch: 1
+    port: 5672
